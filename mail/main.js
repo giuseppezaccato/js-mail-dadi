@@ -9,19 +9,38 @@ Si può fare? Certo che si basta ragionare un po’.
 Nota:
 Non è necessario provvedere alla validazione delle email */
 
-const MailArray = [
-    "AriannaSole.gmail.com",
-    "MatteoOceano.gmail.com",
-    "LunaSilente.gmail.com",
-    "MarcoTempesta.gmail.com",
-    "AuroraBoreale.gmail.com",
+const MailArrayAllowed = [
+    "AriannaSole@gmail.com",
+    "MatteoOceano@gmail.com",
+    "LunaSilente@gmail.com",
+    "MarcoTempesta@gmail.com",
+    "AuroraBoreale@gmail.com",
     "LunaSilvana@gmail.com",
     "MatteoNordica@gmail.com"
 ]
 
-let
+let AddMail = prompt("Inserisci qui la tua email", "giuseppe@gmail.com");
+let isMailAllowed = false;
 
-for ()
+console.log(!isMailAllowed); //* controllo cosa mi fornisce il contrario della variabile sopra stampandola!
+
+// ? la versione con OR dentro alla condizione iniziale di FOR come adnrebbe scritta?
+for (i = 0; i < MailArrayAllowed.length; i++) {
+    if (MailArrayAllowed[i] == AddMail) /*oppure viceversa*/ {
+        isMailAllowed = true
+    }
+}
+
+if (isMailAllowed == true) {
+    console.log(`Benvenuto alla Festa`, AddMail.split("@")[0])
+    //!piccolo bonus .split applicato ad AddMail con [0] 
+    //!per considerare solo il primo dei due "sottoarray" generati con lo split
+
+} else {
+    console.log(`Purtroppo Non sei Ammesso alla Festa`, AddMail.split("@")[0])
+    //!piccolo bonus same as before!
+}
+
 
 
 

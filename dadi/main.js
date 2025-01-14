@@ -30,7 +30,7 @@ if (PlayerNumber > CpuNumber) {
 
 }
 //*banco vince
-else if (CpuNumber > PlayerNumber) {
+else if (PlayerNumber < CpuNumber) {
     console.log(` Mi spiace ${Player} stavolta Vinco io, Ritenta! `)
     document.getElementById("winner").innerHTML = `HAHAHA IL BANCO VINCE SEMPRE!`;
 } else {

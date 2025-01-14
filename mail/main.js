@@ -25,6 +25,7 @@ let isMailAllowed = false;
 console.log(!isMailAllowed); //* controllo cosa mi fornisce il contrario della variabile sopra stampandola!
 
 // ? la versione con OR dentro alla condizione iniziale di FOR come adnrebbe scritta?
+// ? for (i = 0; i < MailArrayAllowed.length || ; i++)
 for (i = 0; i < MailArrayAllowed.length; i++) {
     if (MailArrayAllowed[i] == AddMail) /*oppure viceversa*/ {
         isMailAllowed = true

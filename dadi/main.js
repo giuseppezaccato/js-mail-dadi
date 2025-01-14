@@ -11,8 +11,14 @@ const Player = prompt("scrivi qui il tuo nome, lancerò un Dado due volte e chi 
 console.log(`CPU vs ${Player}`);
 document.getElementById("test").innerHTML = `Ciao ${Player}, giochiamo!!!`;
 
-let PlayerNumber = Math.floor(Math.random() * 7);
-let CpuNumber = Math.floor(Math.random() * 7);
+//!RICORDA SEMPRE! 
+//! math.random()= numero da 0(incluso) a 1(escluso)
+//! math.floor()= numero arrotondato per difetto
+//! math.floor(math.random() *10) = numero da 0 a 9
+//! math.floor(math.random() *10) +1 = numero da 1 a 10 
+
+const PlayerNumber = Math.floor(Math.random() * 6) + 1;
+const CpuNumber = Math.floor(Math.random() * 6) + 1;
 
 console.log(`${Player} => ${PlayerNumber} - CPU => ${CpuNumber}`); //* controllo numeri estratti!
 document.getElementById("result").innerHTML = `hai totalizzato ${PlayerNumber} - Io invece ${CpuNumber}`;

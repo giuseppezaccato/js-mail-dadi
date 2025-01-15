@@ -20,8 +20,8 @@ document.getElementById("test").innerHTML = `Ciao ${Player}, giochiamo!!!`;
 const PlayerNumber = Math.floor(Math.random() * 6) + 1;
 const CpuNumber = Math.floor(Math.random() * 6) + 1;
 
-console.log(`${Player} => ${PlayerNumber} - CPU => ${CpuNumber}`); //* controllo numeri estratti!
-document.getElementById("result").innerHTML = `hai totalizzato ${PlayerNumber} - Io invece ${CpuNumber}`;
+console.log(`${Player} => ${PlayerNumber} \nCPU => ${CpuNumber}`); //* controllo numeri estratti!
+document.getElementById("result").innerHTML = `hai totalizzato ${PlayerNumber} <br> Io invece ${CpuNumber}`;
 
 //*player vince
 if (PlayerNumber > CpuNumber) {
